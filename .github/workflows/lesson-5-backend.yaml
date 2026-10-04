@@ -16,7 +16,7 @@ jobs:
       - name: Run pycharm security test
         uses: tonybaloney/pycharm-security@1.25.1
   unit_test:
-    need: [security_test]
+    needs: [security_test]
     runs-on: ubuntu-latest
     defaults:
       run:
